@@ -1,0 +1,12 @@
+@import "_variables";
+$colorPrimario: blue;
+
+p {
+  @if $color == red {
+    color: $colorPrimario;
+  } @else if $color == azul {
+    color: $colorSecundario;
+  } @else {
+    color: $colorTerciario;
+  }
+}

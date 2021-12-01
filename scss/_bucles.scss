@@ -1,0 +1,9 @@
+@import "_variables";
+
+$medidaBasicaCaja: 120;
+
+@for $i from 1 to 3 {
+  .section#{$i} {
+    width: $medidaBasicaCaja * ($i/2);
+  }
+}
