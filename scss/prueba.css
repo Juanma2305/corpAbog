@@ -315,7 +315,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -323,6 +322,8 @@ footer {
     text-align: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .preguntasFrecuentes {
     padding: 100px;

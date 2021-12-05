@@ -200,10 +200,11 @@ footer{
   }
   .reconocimientos{
     display: flex;
-    width: 100%;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .preguntasFrecuentes{
     padding: 100px;
@@ -221,5 +222,4 @@ footer{
     justify-content: center;
     background-color: $colorTerciario;
   }
-  
 }
