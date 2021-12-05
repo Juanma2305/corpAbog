@@ -5,281 +5,221 @@
 @import "_bucles";
 @import "_condicionales";
 
-.menu {
-  background-color: black;
-  height: 100px;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box}
+
+  h2{
+    color: $colorCuarto;
+    text-align: center;
+  }
+
+  h3{
+    color: #FFC286;
+    text-align: center;
+  }
+  h4{
+    color: beige;
+  }
+
+  .nuestraCompañia{
+  padding-right: 5px;
+  padding-top: 60px;
   display: flex;
-  align-items: flex-start;
-  justify-content: baseline;
-  box-shadow: 10px 0 10px grey;
-}
-
-header{
-  margin: 10px;
-  padding: 5px;
-}
-
-/*Titulos*/
-h1 {
-  color: #f52900;
-  font-style: oblique;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-h2 {
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: $colorSecundario;
-  text-align: center;
-  letter-spacing: 2px;
-  word-spacing: 15px;
-}
-
-/*Nuestra compañia*/
-
-.abog {
-  grid-area: abog;
-}
-
-.escr {
-  grid-area: escr;
-}
-
-.quienesSomos {
-  grid-area: quienesSomos;
-}
-
-.noticia {
-  grid-area: noticia;
-}
-
-.contacto {
-  grid-area: contacto;
-}
-
-.nuestraCompañia {
-  image-orientation: from-image;
-  background-image: url(https://sepulvedabogados.com/wp-content/uploads/2020/05/Aprende-t%C3%A9rminos-legales-en-ingl%C3%A9s-para-abogados-1536x1024.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.listaAbog {
-  font-style: italic;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
-
-.nombres {
-  font-style: oblique;
-  font-weight: bold;
-  color: #fbf3e4;
-  text-decoration: none;
-}
-
-.nombres {
-  text-decoration: none;
-}
-
-/*tarifas*/
-
-.tablasChatas {
-  background-color: $colorPrincipal;
-}
-
-.abogadoGris {
-  font-size: 25px;
-  font-style: oblique;
-  font-weight: bold;
-  color: #d9cab3;
-}
-
-/*tabla*/
-.escribanos1 {
-  font-size: 25px;
-  font-style: oblique;
-  font-weight: bold;
-  color: #d9cab3;
-}
-
-.tableFondo {
-  text-align: center;
-  background-color: #d9cab3;
-}
-
-.fondoAbogado {
-  background-color: gray;
-}
-
-.morales {
-  background-color: #069af0;
-}
-
-.alvarez {
-  background-color: indianred;
-}
-
-.acosta {
-  background-color: #c6e901;
-}
-
-.escribanos {
-  background-color: #76be0a;
-}
-
-.escribano1 {
-  background-color: khaki;
-}
-
-.escribano2 {
-  background-color: lightgreen;
-}
-
-/*fin de tabla*/
-.video {
-  line-height: 2px;
-}
-
-/*preguntas*/
-
-.preguntasFrecuentes {
-  color: #1d2000;
-  background-color: $colorPrincipal;
-}
-
-.preguntas-frecuentes {
-  text-align: justify;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 2;
-}
-
-.liTarifas {
-  text-align: center;
-  word-spacing: 10px;
-}
-
-.sectionGaleria {
-  background-color: $colorPrincipal;
-}
-
-.galeria {
-  display: flex;
-  justify-content: space-around;
-  background-color: $colorPrincipal;
-  align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url(https://www.castrostagnaro.com/wp-content/uploads/2021/07/72814-1-1910x1074.jpg);
+}
+.titulos{
+  width: 100%;
+  color:cornsilk;
 }
 
-.imagenes {
-  font-style: italic;
-  font-weight: bold;
-}
-
-
-.pregFrec {
-  width: 50fr;
-  height: 100px;
-  transition: height 2s, width 1s;
-}
-
-.pregFrec:hover {
-  height: 200px;
-  width: 50fr;
-  font-size: 25px;
-}
-
-/*Reconocimientos*/
-.reconocimientos {
-  background-color: $colorPrincipal;
-}
-
-.titulos-otorgados {
-  color: maroon;
-  font-style: italic;
-}
-
-.grandesRecon {
-  border: solid 5px black;
-  padding: 5px;
+.section{
+  padding-top: 100px;
   display: flex;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $colorTerciario;
+  text-align: center;
+  padding-bottom: 100px;
+  .section__subtitulo{
+  color: white;
+  }
+  .section__contenido{
+    color: beige;
+  }
 }
 
-.tituloRecon {
-  font-style: italic;
-  color: brown;
+.sectioninfo__pie--abogados{
+  color: white;
+}
+
+.sectioninfo__pie--noticias{
+  text-decoration: none;
+  color: white;
+  
+}
+.sectioninfo__pie--rrss{
+    text-decoration: none;
+    color: white;
+  }
+/*TARIFAS*/
+
+.tarifas{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $colorTerciario;
+}
+.tablaAbog{
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+.tableFondo{
+  background-color: $colorSecundario;
+  width: 60%;
+  text-align: center;
+}
+
+.tablaEscr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+.preguntasFrecuentes{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $colorTerciario;
+  align-items: center;
+  }
+.preguntas-frecuentes{
+  color: #FA8072;
+}
+/*RECONOCIMIENTOS*/
+
+.reconocimientos{
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colorTerciario;
+  padding-bottom: 200px;
+  padding: 200px;
 }
 
 /*Consultas*/
-.consultas {
-  background-color: $colorPrincipal;
-  text-transform: capitalize;
+
+.flexConsultas{
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $colorTerciario;
 }
 
-.iniciaSesion {
-  color: midnightblue;
-  line-height: 2px;
-}
-
-main {
-  background-color: $colorPrincipal;
-}
-
-.password:focus {
-  width: 200px;
-  font-size: 20px;
+.iniciaSesion{
+  color: beige;
 }
 
 /*FOOTER*/
-.footerPadre {
-  display: grid;
+
+footer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-image: linear-gradient(to left, black, #494949);
-  padding: 10px;
+  align-items: center;
+  background-color: grey;
 }
 
-footer {
-  color: white;
-  list-style: none;
-}
 
-.footerHijo {
-  grid-area: footerHijo;
-}
+/*Media query*/
 
-.pFooter {
-  grid-area: pFooter;
-}
-
-.imgFooter {
-  grid-area: imgFooter;
-}
-
-.pFooter {
-  color: aliceblue;
-}
-
-.listaInicio {
-  grid-area: listaInicio;
-}
-
-.listaTarifas {
-  grid-area: listaTarifas;
-}
-
-.listaPreguntas {
-  grid-area: listaPreguntas;
-}
-
-.listaRecon {
-  grid-area: listaRecon;
-}
-
-.listaConsultas {
-  grid-area: listaRecon;
+@media (max-width: 414px){
+  .nuestraCompañia{
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: $colorTerciario;
+    list-style: inside;
+    div{
+      width: 100%;
+      text-align: center;
+    }
+    
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    .realizado{
+      order: 3;
+    }
+  }
+  .flexConsultas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    row-gap: 2rem;
+    padding-top: 4rem;
+    width: 100%;
+    background-color: $colorTerciario;
+  }
+  .reconocimientos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .preguntasFrecuentes{
+    padding: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tarifas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $colorTerciario;
+  }
+  
 }

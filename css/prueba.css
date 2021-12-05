@@ -1,67 +1,5 @@
 @charset "UTF-8";
 /*inicio*/
-.nuestraCompañia {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "titulo titulo parte1 parte1 parte1" "abog escr noticia quienesSomos contacto";
-  justify-content: center; }
-
-/*Tarifas*/
-.tablasChatas {
-  display: grid;
-  grid-template-columns: 5fr 5fr;
-  grid-template-areas: "tablaAbog tablaEscr" "tablaAbog tablaEscr" "video video"; }
-
-.tablaAbog {
-  grid-area: tablaAbog; }
-
-.tablaEscr {
-  grid-area: tablaEscr; }
-
-.video {
-  grid-area: video; }
-
-/*Preguntas frecuentes*/
-.preguntasGrid {
-  width: 100%;
-  margin: 1px;
-  display: grid;
-  grid-template-columns: 5fr 5fr;
-  grid-auto-rows: 3fr 4fr 3fr;
-  grid-template-areas: "preguntasFrecuentes sectionGaleria" "preguntasFrecuentes sectionGaleria" "footerPadre pFooter";
-  grid-column: auto; }
-
-.preguntasFrecuentes {
-  grid-area: preguntasFrecuentes; }
-
-.sectionGaleria {
-  grid-area: sectionGaleria; }
-
-/*CONSULTAS*/
-.consultas {
-  width: 100%;
-  margin: 1px;
-  display: grid;
-  grid-template-columns: 5fr 3fr 3fr;
-  grid-template-rows: 5fr 5fr 3fr;
-  grid-template-areas: "section1 section2 section3" "section1 section2 article2" "article1 article1 article1";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: stretch; }
-
-.section1 {
-  grid-area: section1; }
-
-.section2 {
-  grid-area: section2; }
-
-.article1 {
-  grid-area: article1; }
-
-.article2 {
-  grid-area: article2;
-  text-align: justify; }
-
 /*VARIABLES*/
 /*CONDICIONALES*/
 /*VARIABLES*/
@@ -77,241 +15,38 @@
 p {
   color: blue; }
 
-.menu {
-  background-color: black;
-  height: 100px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: baseline;
-  box-shadow: 10px 0 10px grey; }
-
-.ulHeader {
-  display: flex;
-  margin-right: 10px;
-  list-style-type: none; }
-  .ulHeader li {
-    list-style: none;
-    padding: 20px;
-    font-size: large;
-    text-transform: uppercase; }
-    .ulHeader li a {
-      text-decoration: none;
-      color: cornsilk;
-      display: block; }
-
-.ulHeader li:hover {
-  background-color: red; }
-
-/*Titulos*/
-h1 {
-  color: #f52900;
-  font-style: oblique;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center; }
-
-h2 {
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: maroon;
-  text-align: center;
-  letter-spacing: 2px;
-  word-spacing: 15px; }
-
-/*Nuestra compañia*/
-.abog {
-  grid-area: abog; }
-
-.escr {
-  grid-area: escr; }
-
-.quienesSomos {
-  grid-area: quienesSomos; }
-
-.noticia {
-  grid-area: noticia; }
-
-.contacto {
-  grid-area: contacto; }
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
 .nuestraCompañia {
-  image-orientation: from-image;
-  background-image: url(https://sepulvedabogados.com/wp-content/uploads/2020/05/Aprende-t%C3%A9rminos-legales-en-ingl%C3%A9s-para-abogados-1536x1024.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.listaAbog {
-  font-style: italic;
-  font-size: 20px;
-  font-weight: bold;
-  color: black; }
-
-.nombres {
-  font-style: oblique;
-  font-weight: bold;
-  color: #fbf3e4;
-  text-decoration: none; }
-
-.nombres {
-  text-decoration: none; }
-
-/*tarifas*/
-.tablasChatas {
-  background-color: #6D9886; }
-
-.abogadoGris {
-  font-size: 25px;
-  font-style: oblique;
-  font-weight: bold;
-  color: #d9cab3; }
-
-/*tabla*/
-.escribanos1 {
-  font-size: 25px;
-  font-style: oblique;
-  font-weight: bold;
-  color: #d9cab3; }
-
-.tableFondo {
-  text-align: center;
-  background-color: #d9cab3; }
-
-.fondoAbogado {
-  background-color: gray; }
-
-.morales {
-  background-color: #069af0; }
-
-.alvarez {
-  background-color: indianred; }
-
-.acosta {
-  background-color: #c6e901; }
-
-.escribanos {
-  background-color: #76be0a; }
-
-.escribano1 {
-  background-color: khaki; }
-
-.escribano2 {
-  background-color: lightgreen; }
-
-/*fin de tabla*/
-.video {
-  line-height: 2px; }
-
-/*preguntas*/
-.preguntasFrecuentes {
-  color: #1d2000;
-  background-color: #6D9886; }
-
-.preguntas-frecuentes {
-  text-align: justify;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 2; }
-
-.liTarifas {
-  text-align: center;
-  word-spacing: 10px; }
-
-.sectionGaleria {
-  background-color: #6D9886; }
-
-.galeria {
-  display: flex;
-  justify-content: space-between;
-  background-color: #6D9886;
-  align-items: center;
-  flex-direction: column; }
-
-.imagenes {
-  font-style: italic;
-  font-weight: bold; }
-
-.galeria .imagen:hover {
-  transform: scale(1, 3, 1.1); }
-
-.pregFrec {
-  width: 50fr;
-  height: 100px;
-  transition: height 2s, width 1s; }
-
-.pregFrec:hover {
-  height: 200px;
-  width: 50fr;
-  font-size: 25px; }
-
-/*Reconocimientos*/
-.reconocimientos {
-  background-color: #6D9886; }
-
-.titulos-otorgados {
-  color: maroon;
-  font-style: italic; }
-
-.grandesRecon {
-  border: solid 5px black;
-  padding: 5px;
-  display: flex;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif; }
-
-.tituloRecon {
-  font-style: italic;
-  color: brown; }
-
-/*Consultas*/
-.consultas {
-  background-color: #6D9886;
-  text-transform: capitalize; }
-
-.iniciaSesion {
-  color: midnightblue;
-  line-height: 2px; }
-
-main {
-  background-color: #6D9886; }
-
-.password:focus {
-  width: 200px;
-  font-size: 20px; }
-
-/*FOOTER*/
-.footerPadre {
-  display: grid;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-image: linear-gradient(to left, black, #494949);
-  padding: 10px; }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5%; }
 
-footer {
-  color: white;
-  list-style: none; }
+.titulos {
+  width: 100%; }
 
-.footerHijo {
-  grid-area: footerHijo; }
+h1 {
+  color: red; }
 
-.pFooter {
-  grid-area: pFooter; }
+h2 {
+  color: blue; }
 
-.imgFooter {
-  grid-area: imgFooter; }
+.abog {
+  background-color: brown;
+  width: 5rem; }
 
-.pFooter {
-  color: aliceblue; }
+.noticia {
+  background-color: cadetblue;
+  width: 10em; }
 
-.listaInicio {
-  grid-area: listaInicio; }
+.quienesSomos {
+  background-color: chocolate; }
 
-.listaTarifas {
-  grid-area: listaTarifas; }
-
-.listaPreguntas {
-  grid-area: listaPreguntas; }
-
-.listaRecon {
-  grid-area: listaRecon; }
-
-.listaConsultas {
-  grid-area: listaRecon; }
+.contacto {
+  background-color: cyan; }
