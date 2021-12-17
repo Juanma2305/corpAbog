@@ -22,6 +22,24 @@
   h4{
     color: beige;
   }
+
+  /*Navbar*/
+
+
+  .navbar-light .navbar-brand{
+    text-align: justify;
+    margin-left: 50%;
+    background-color: rgb(177, 129, 137);
+    
+  }
+
+  .navbar-light .navbar-toggler{
+    background-color: rgba(240, 89, 89, 0.432);
+    }
+
+
+
+
 /*NUESTRA COMPAÑÍA*/
 
   .nuestraCompañia{
@@ -30,17 +48,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   background-image: url(https://www.castrostagnaro.com/wp-content/uploads/2021/07/72814-1-1910x1074.jpg);
+  justify-content: space-around;
 }
 .titulos{
   width: 100%;
-  color:cornsilk;
+  color: #C84B31;
+  padding: 5rem;
+  text-align: center;
+  border-style: solid;
+  border-color: #c06407;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 0;
+}
+
+.sectioninfo__abog{
+  border-style: solid;
+  border-color: khaki;
 }
 
 .section{
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -48,8 +78,18 @@
   background-color: $colorTerciario;
   text-align: center;
   padding-bottom: 100px;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-style: solid;
+  border-color: rgb(244, 248, 3);
+
+  
+  
+
   .section__subtitulo{
   color: white;
+  padding-top: 50px;
   }
   .section__contenido{
     color: beige;
@@ -72,38 +112,69 @@
 /*TARIFAS*/
 
 .tarifas{
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   background-color: $colorTerciario;
+  
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+  
 }
 .tablaAbog{
   padding: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .tableFondo{
-  background-color: $colorSecundario;
+  background-color: rgb(108, 207, 211);
   width: 60%;
   text-align: center;
 }
 
 .tablaEscr{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  padding: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 3%;
+  vertical-align: middle;
+  width: 80%;
+  h3{
+    width: 100%;
+  }
 }
 
-.video{
+.profesionales{
+  padding-right: 5px;
+  padding-top: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: $colorTerciario;
+  text-align: center;
+  p{
+    margin-top: 2rem;
+  }
+  div{
+    margin: 3%;
+  }
+
+  .profesionales__title{
+  
+    width: 100%;
+  }
+
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -182,9 +253,14 @@ footer{
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    flex-wrap: wrap;
     padding-top: 2rem;
     .realizado{
       order: 3;
+    }
+    img{
+      width: 150px;
+      height: 100px;
     }
   }
   .flexConsultas{
@@ -208,7 +284,7 @@ footer{
     padding-right: 5%;
   }
   .preguntasFrecuentes{
-    padding: 100px;
+    padding: 5rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -222,5 +298,10 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     background-color: $colorTerciario;
+    
+    div{
+      width: 100%;
+    }
   }
+  
 }

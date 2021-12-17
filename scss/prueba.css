@@ -39,6 +39,17 @@ h4 {
   color: beige;
 }
 
+/*Navbar*/
+.navbar-light .navbar-brand {
+  text-align: justify;
+  margin-left: 50%;
+  background-color: #b18189;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: rgba(240, 89, 89, 0.432);
+}
+
 /*NUESTRA COMPAÑÍA*/
 .nuestraCompañia {
   padding-right: 5px;
@@ -52,20 +63,31 @@ h4 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   background-image: url(https://www.castrostagnaro.com/wp-content/uploads/2021/07/72814-1-1910x1074.jpg);
+  justify-content: space-around;
 }
 
 .titulos {
   width: 100%;
-  color: cornsilk;
+  color: #C84B31;
+  padding: 5rem;
+  text-align: center;
+  border-style: solid;
+  border-color: #c06407;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 0;
+}
+
+.sectioninfo__abog {
+  border-style: solid;
+  border-color: khaki;
 }
 
 .section {
-  padding-top: 100px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,10 +103,18 @@ h4 {
   background-color: #181D31;
   text-align: center;
   padding-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-style: solid;
+  border-color: #f4f803;
 }
 
 .section .section__subtitulo {
   color: white;
+  padding-top: 50px;
 }
 
 .section .section__contenido {
@@ -107,14 +137,26 @@ h4 {
 
 /*TARIFAS*/
 .tarifas {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #181D31;
+}
+
+.tarifas h2 {
+  width: 100%;
+  text-align: center;
 }
 
 .tablaAbog {
@@ -129,11 +171,10 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex-direction: column;
 }
 
 .tableFondo {
-  background-color: maroon;
+  background-color: #6ccfd3;
   width: 60%;
   text-align: center;
 }
@@ -142,30 +183,54 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 3%;
+  vertical-align: middle;
+  width: 80%;
 }
 
-.video {
+.tablaEscr h3 {
+  width: 100%;
+}
+
+.profesionales {
+  padding-right: 5px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: #181D31;
+  text-align: center;
+}
+
+.profesionales p {
+  margin-top: 2rem;
+}
+
+.profesionales div {
+  margin: 3%;
+}
+
+.profesionales .profesionales__title {
+  width: 100%;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -285,12 +350,18 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 2rem;
   }
   footer .realizado {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  footer img {
+    width: 150px;
+    height: 100px;
   }
   .flexConsultas {
     display: -webkit-box;
@@ -327,7 +398,7 @@ footer {
     padding-right: 5%;
   }
   .preguntasFrecuentes {
-    padding: 100px;
+    padding: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,6 +428,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #181D31;
+  }
+  .tarifas div {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=prueba.css.map */
