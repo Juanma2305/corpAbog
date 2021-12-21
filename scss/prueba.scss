@@ -37,9 +37,6 @@
     background-color: rgba(240, 89, 89, 0.432);
     }
 
-
-
-
 /*NUESTRA COMPAÑÍA*/
 
   .nuestraCompañia{
@@ -62,12 +59,12 @@
   border-color: #c06407;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-radius: 0;
+  h2{
+    color: #c84b31;
+  }
 }
 
-.sectioninfo__abog{
-  border-style: solid;
-  border-color: khaki;
-}
+
 
 .section{
   padding-top: 50px;
@@ -165,6 +162,7 @@
   text-align: center;
   p{
     margin-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   div{
     margin: 3%;
@@ -173,6 +171,9 @@
   .profesionales__title{
   
     width: 100%;
+  }
+  .profesionales__nombres{
+    color: lightblue;
   }
 
 }
@@ -231,6 +232,10 @@ footer{
   justify-content: space-around;
   align-items: center;
   background-color: grey;
+  p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 }
 
 
@@ -284,12 +289,15 @@ footer{
     padding-right: 5%;
   }
   .preguntasFrecuentes{
-    padding: 5rem;
+    padding: 10rem;
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    .pregFrec{
+      text-align: center;
+    }
   }
   .tarifas{
     display: flex;

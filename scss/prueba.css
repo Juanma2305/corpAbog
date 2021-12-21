@@ -81,9 +81,8 @@ h4 {
   border-radius: 0;
 }
 
-.sectioninfo__abog {
-  border-style: solid;
-  border-color: khaki;
+.titulos h2 {
+  color: #c84b31;
 }
 
 .section {
@@ -223,6 +222,7 @@ h4 {
 
 .profesionales p {
   margin-top: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .profesionales div {
@@ -231,6 +231,10 @@ h4 {
 
 .profesionales .profesionales__title {
   width: 100%;
+}
+
+.profesionales .profesionales__nombres {
+  color: lightblue;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -325,6 +329,11 @@ footer {
   background-color: grey;
 }
 
+footer p {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /*Media query*/
 @media (max-width: 414px) {
   .nuestraCompañia {
@@ -398,7 +407,7 @@ footer {
     padding-right: 5%;
   }
   .preguntasFrecuentes {
-    padding: 5rem;
+    padding: 10rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,6 +421,9 @@ footer {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .preguntasFrecuentes .pregFrec {
+    text-align: center;
   }
   .tarifas {
     display: -webkit-box;
