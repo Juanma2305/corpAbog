@@ -1,9 +1,4 @@
-@import "_grids";
 @import "_variables";
-@import "_operaciones";
-@import "_mixin";
-@import "_bucles";
-@import "_condicionales";
 
 *{
   margin: 0%;
@@ -11,20 +6,16 @@
   box-sizing: border-box}
 
   h2{
-    color: $colorCuarto;
+    color: #C84B31;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
-  h3{
-    color: #FFC286;
-    text-align: center;
-  }
   h4{
     color: beige;
   }
 
   /*Navbar*/
-
 
   .navbar-light .navbar-brand{
     text-align: justify;
@@ -49,6 +40,12 @@
   width: 100%;
   background-image: url(https://www.castrostagnaro.com/wp-content/uploads/2021/07/72814-1-1910x1074.jpg);
   justify-content: space-around;
+  .sectioninfo__pie{
+    color: #FA8072;
+  }
+}
+.section__contenido{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .titulos{
   width: 100%;
@@ -63,9 +60,6 @@
     color: #c84b31;
   }
 }
-
-
-
 .section{
   padding-top: 50px;
   display: flex;
@@ -79,11 +73,13 @@
   padding-left: 5rem;
   padding-right: 5rem;
   border-style: solid;
-  border-color: rgb(244, 248, 3);
-
-  
-  
-
+  border-color: #c06407;
+  h3{
+    color: #FA8072;
+  }
+  h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
   .section__subtitulo{
   color: white;
   padding-top: 50px;
@@ -121,13 +117,19 @@
     width: 100%;
     text-align: center;
   }
-  
 }
 .tablaAbog{
   padding: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  h3{
+    color: #FA8072;
+  }
+  p{
+    color: white;
+  }
 }
 
 .tableFondo{
@@ -146,7 +148,11 @@
   vertical-align: middle;
   width: 80%;
   h3{
+    color: #FA8072;
     width: 100%;
+  }
+  p{
+    color: white;
   }
 }
 
@@ -163,6 +169,7 @@
   p{
     margin-top: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(235, 125, 0);
   }
   div{
     margin: 3%;
@@ -175,16 +182,19 @@
   .profesionales__nombres{
     color: lightblue;
   }
+  img{
+    border-radius: 50%;
+  }
 
 }
 
 /*PREGUNTAS FRECUENTES*/
 
 .preguntasFrecuentes{
-  padding-top: 5%;
+  padding-top: 10rem;
   padding-bottom: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   background-color: $colorTerciario;
@@ -193,36 +203,89 @@
 .preguntas-frecuentes{
   color: #FA8072;
 }
+.pregFrec{
+  padding-top: 5rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: white;
+  }
+  
+}
+.sectionGaleria{
+  padding-top: 5rem;
+  padding: 3rem;
+  h3{
+    color: #FA8072;
+    padding-bottom: 5rem;
+  }
+  
+}
+
 /*RECONOCIMIENTOS*/
 
 .reconocimientos{
-  padding-top: 100px;
+  padding-top: 7rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   background-color: $colorTerciario;
-  padding-bottom: 200px;
-  padding: 200px;
+  h3{
+    color: #FA8072;
+  }
+  .premios{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 25px;
+    flex-direction:column;
+    padding-top: 5rem;
+    text-decoration: none;
+    color: rgba(255, 81, 0, 0.87);
+  }
+  p{
+    color: white;}
+  
+  .titulos-otorgados{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    padding-top:5rem;
+  }
 }
+
 
 /*Consultas*/
 
-.flexConsultas{
-  padding: 80px;
+.consultasDiv{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10rem;
   background-color: $colorTerciario;
+  align-items: center;
+  text-align: center;
+  h3{
+    color: #FA8072;
+  }
+  .correo{
+    color: white;
+  }
+  .iniciaSesion{
+    color: white;
+  }
+  p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
 }
 
-.iniciaSesion{
-  color: beige;
-}
 
 /*FOOTER*/
 
@@ -260,6 +323,7 @@ footer{
     row-gap: 2rem;
     flex-wrap: wrap;
     padding-top: 2rem;
+    padding-bottom: 10rem;
     .realizado{
       order: 3;
     }
@@ -276,7 +340,7 @@ footer{
     padding-right: 5%;
     justify-content: center;
     row-gap: 2rem;
-    padding-top: 4rem;
+    padding-top: 1rem;
     width: 100%;
     background-color: $colorTerciario;
   }
@@ -289,15 +353,13 @@ footer{
     padding-right: 5%;
   }
   .preguntasFrecuentes{
-    padding: 10rem;
     display: flex;
-    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    .pregFrec{
-      text-align: center;
-    }
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5rem;
   }
   .tarifas{
     display: flex;
@@ -306,10 +368,8 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     background-color: $colorTerciario;
-    
     div{
       width: 100%;
     }
   }
-  
-}
+  }

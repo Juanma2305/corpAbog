@@ -1,23 +1,6 @@
 @charset "UTF-8";
-/*inicio*/
 /*VARIABLES*/
 /*CONDICIONALES*/
-/*VARIABLES*/
-/*CONDICIONALES*/
-.section1 {
-  width: 60;
-}
-
-.section2 {
-  width: 120;
-}
-
-/*VARIABLES*/
-/*CONDICIONALES*/
-p {
-  color: beige;
-}
-
 * {
   margin: 0%;
   padding: 0%;
@@ -26,13 +9,9 @@ p {
 }
 
 h2 {
-  color: #E6DDC4;
+  color: #C84B31;
   text-align: center;
-}
-
-h3 {
-  color: #FFC286;
-  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h4 {
@@ -68,6 +47,14 @@ h4 {
   width: 100%;
   background-image: url(https://www.castrostagnaro.com/wp-content/uploads/2021/07/72814-1-1910x1074.jpg);
   justify-content: space-around;
+}
+
+.nuestraCompañia .sectioninfo__pie {
+  color: #FA8072;
+}
+
+.section__contenido {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .titulos {
@@ -108,7 +95,15 @@ h4 {
   padding-left: 5rem;
   padding-right: 5rem;
   border-style: solid;
-  border-color: #f4f803;
+  border-color: #c06407;
+}
+
+.section h3 {
+  color: #FA8072;
+}
+
+.section h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .section .section__subtitulo {
@@ -170,6 +165,15 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+.tablaAbog h3 {
+  color: #FA8072;
+}
+
+.tablaAbog p {
+  color: white;
 }
 
 .tableFondo {
@@ -198,7 +202,12 @@ h4 {
 }
 
 .tablaEscr h3 {
+  color: #FA8072;
   width: 100%;
+}
+
+.tablaEscr p {
+  color: white;
 }
 
 .profesionales {
@@ -223,6 +232,7 @@ h4 {
 .profesionales p {
   margin-top: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #eb7d00;
 }
 
 .profesionales div {
@@ -237,17 +247,21 @@ h4 {
   color: lightblue;
 }
 
+.profesionales img {
+  border-radius: 50%;
+}
+
 /*PREGUNTAS FRECUENTES*/
 .preguntasFrecuentes {
-  padding-top: 5%;
+  padding-top: 10rem;
   padding-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -263,9 +277,34 @@ h4 {
   color: #FA8072;
 }
 
+.pregFrec {
+  padding-top: 5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pregFrec p {
+  color: white;
+}
+
+.sectionGaleria {
+  padding-top: 5rem;
+  padding: 3rem;
+}
+
+.sectionGaleria h3 {
+  color: #FA8072;
+  padding-bottom: 5rem;
+}
+
 /*RECONOCIMIENTOS*/
 .reconocimientos {
-  padding-top: 100px;
+  padding-top: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,35 +320,76 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
   background-color: #181D31;
-  padding-bottom: 200px;
-  padding: 200px;
+}
+
+.reconocimientos h3 {
+  color: #FA8072;
+}
+
+.reconocimientos .premios {
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5rem;
+  text-decoration: none;
+  color: rgba(255, 81, 0, 0.87);
+}
+
+.reconocimientos p {
+  color: white;
+}
+
+.reconocimientos .titulos-otorgados {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 5rem;
 }
 
 /*Consultas*/
-.flexConsultas {
-  padding: 80px;
+.consultasDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10rem;
+  background-color: #181D31;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #181D31;
+  text-align: center;
 }
 
-.iniciaSesion {
-  color: beige;
+.consultasDiv h3 {
+  color: #FA8072;
+}
+
+.consultasDiv .correo {
+  color: white;
+}
+
+.consultasDiv .iniciaSesion {
+  color: white;
+}
+
+.consultasDiv p {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*FOOTER*/
@@ -362,6 +442,7 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 2rem;
+    padding-bottom: 10rem;
   }
   footer .realizado {
     -webkit-box-ordinal-group: 4;
@@ -388,7 +469,7 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
     row-gap: 2rem;
-    padding-top: 4rem;
+    padding-top: 1rem;
     width: 100%;
     background-color: #181D31;
   }
@@ -407,23 +488,19 @@ footer p {
     padding-right: 5%;
   }
   .preguntasFrecuentes {
-    padding: 10rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .preguntasFrecuentes .pregFrec {
-    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5rem;
   }
   .tarifas {
     display: -webkit-box;
